@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position fruit card</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(14, 14, 14);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .box2 {
+        width: 900px;
+        height: 100vh;
+        background-color: #01e37f;
+        position: relative;
+        left: 250px;
+      }
+
+      .box3 {
+        width: 550px;
+        height: 500px;
+        background-color: hsl(0, 23%, 95%);
+        position: relative;
+        top: 55px;
+        left: 200px;
+        border-radius: 5px;
+      }
+
+      .text_area {
+        display: flex;
+        justify-content: right;
+      }
+
+      .heading {
+        display: flex;
+        justify-content: right;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        margin-right: 100px;
+        padding-top: 50px;
+      }
+
+      .cod {
+        display: flex;
+        justify-content: right;
+        font-size: 12px;
+        font-weight: lighter;
+        font-family: "Roboto", sans-serif;
+        margin-right: 250px;
+        padding-top: 5px;
+      }
+
+      span {
+        font-size: 20px;
+        font-weight: 300;
+        color: red;
+        display: flex;
+        justify-content: right;
+        font-family: "Roboto", sans-serif;
+        margin-right: 20px;
+        margin-top: 20px;
+      }
+
+      .rupees {
+        display: flex;
+        justify-content: right;
+        font-size: 56px;
+        font-weight: 300;
+        font-family: "Roboto", sans-serif;
+        margin-right: 150px;
+        padding-top: 20px;
+        color: red;
+      }
+
+      .sel {
+        display: flex;
+        justify-content: right;
+        font-size: 12px;
+        font-weight: lighter;
+        font-family: "Roboto", sans-serif;
+        margin-right: 220px;
+        padding-top: 10px;
+        align-items: center;
+      }
+
+      .ben {
+        display: flex;
+        justify-content: right;
+        font-size: 16px;
+        color: gray;
+        font-weight: normal;
+        font-family: "Roboto", sans-serif;
+        margin-right: 160px;
+        padding-top: 5px;
+        align-items: center;
+      }
+
+      .benefits {
+        display: flex;
+        justify-content: right;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        margin-right: 80px;
+        padding-top: 60px;
+        align-items: center;
+      }
+
+      .cart {
+        margin-top: 40px;
+        background-color: red;
+        color: white;
+        padding: 20px 40px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .sel_img {
+        position: relative;
+      }
+
+      .sel_img img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+
+      .img1 {
+        left: 680px;
+        top: -340px;
+      }
+
+      .img2 {
+        left: 720px;
+        top: -340px;
+      }
+
+      .img3 {
+        left: 760px;
+        top: -340px;
+      }
+
+      .img4 {
+        left: 800px;
+        top: -340px;
+      }
+
+      .variety {
+        position: relative;
+        height: 70px;
+        width: 250px;
+        border-radius: 0px 0px 5px 5px;
+        background-color: aliceblue;
+        left: 400px;
+        top: -160px;
+        display: flex;
+        align-items: center;
+      }
+
+      .variety img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #box5 img,
+      #box6 img,
+      #box7 img,
+      #box8 img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* Centers images vertically */
+      }
+
+      #box5 img {
+        left: 15px;
+      }
+
+      #box6 img {
+        left: 70px;
+      }
+
+      #box7 img {
+        left: 125px;
+      }
+
+      #box8 img {
+        left: 180px;
+      }
+
+      .box4 {
+        height: 400px;
+        width: 250px;
+        background-color: #a4dd20;
+        position: absolute;
+        top: 108px;
+        left: 150px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+
+      i {
+        font-size: larger;
+        color: white;
+      }
+
+      img {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="box2">
+        <div class="box3">
+          <div class="text-area">
+            <div class="heading">Delicious Apples</div>
+            <p class="cod">COD:45999</p>
+            <p class="rupees"><span>R$</span>7.93</p>
+            <p class="sel">SELECT A COLOR</p>
+            <div class="benefits">
+              <ul>
+                <p class="ben">BENEFITS</p>
+                <li>Apples are nutricious</li>
+                <li>Apples may be good for weight loss</li>
+                <li>Apples may be good for bone health</li>
+                <li>They are liked to lowest risk of diabetes</li>
+                <button class="cart">ADD TO CART</button>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box4">
+          <i class="ri-share-fill"></i>
+          <i class="ri-heart-3-line"></i>
+        </div>
+        <img
+          src="images/vg-vaf-ff-1-400x457-removebg-preview.png"
+          alt="Apple"
+        />
+      </div>
+    </div>
+    <div class="sel_img">
+      <img src="images/apple5.png" alt="Apple" class="img1" />
+      <img src="images/apple6.png" alt="Apple" class="img2" />
+      <img src="images/apple7.png" alt="Apple" class="img3" />
+      <img src="images/apple8.png" alt="Apple" class="img4" />
+    </div>
+
+    <div class="variety">
+      <div id="box5"><img src="images/apple1.png" alt="apple" /></div>
+
+      <div id="box6"><img src="images/apple2.png" alt="apple" /></div>
+
+      <div id="box7"><img src="images/apple3.png" alt="apple" /></div>
+
+      <div id="box8"><img src="images/apple4.png" alt="apple" /></div>
+    </div>
+  </body>
+</html>
