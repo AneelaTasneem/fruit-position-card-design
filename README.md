@@ -13,7 +13,7 @@ A beautifully designed fruit product card showcasing apples with an interactive 
 
 ## 📸 Preview
 
-![Fruit Card Preview](images/preview.png) *(Add a screenshot of your design here)*
+![Image](https://github.com/user-attachments/assets/fe9c08ad-2c40-41e8-b458-bbeb7ea0fb0f)
 
 ## 🚀 How to Use
 
